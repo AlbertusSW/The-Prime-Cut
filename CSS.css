@@ -1,0 +1,321 @@
+* {box-sizing:border-box}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1500px;
+  margin-top: -6px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-size:larger;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  margin-left: 60px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 20px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+body {margin:0;}
+        
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: black;
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 20px 20px;
+          text-decoration: none;
+          font-size: 20px;
+          line-height: 45px;
+          top: 50%;
+        }
+        
+        
+        .active {
+          background-color: orange;
+        }
+
+        .box {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        will-change: transform, opacity;
+        float: right;
+        }
+  
+        .box:hover {
+        transform: scale(1.2);
+        opacity: 0.8;
+        color: red;
+        }
+
+        .navbar-logo {
+        padding: 10px;
+        width: 300px; /* Sesuaikan dengan lebar navbar */
+        height: auto; /* Atau tentukan tinggi jika perlu */
+        }
+
+        .navcontainer{
+          position:fixed ;
+        }
+
+        .hero-section {
+          margin-top: 20px;
+          text-align: center;
+      }
+      .hero-section h1 {
+          font-size: 2.5rem;
+          font-weight: bold;
+      }
+
+      .btn-primary {
+        padding: 10px 30px;
+        font-size: 1.1rem;
+    }
+  section {
+      padding: 20px;
+      border-top: 2px;
+      text-align: center;
+  }
+
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 10px; /* Jarak antar gambar */
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden; /* Memastikan gambar tidak keluar dari container */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    transition: transform 0.3s ease; /* Efek hover */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Membesar saat dihover */
+}
+
+.gallery-item img {
+    width: 100%; /* Gambar mengisi container */
+    height: 100%; /* Gambar mengisi container */
+    object-fit: cover; /* Gambar tidak terdistorsi */
+    display: inline-block;
+}
+
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18px;
+}
+
+.footer {
+  width: auto;
+  height: 300px;
+  background-image: url('Footer Background.png');
+  padding: 70px 0;
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-col{
+   width: 33%;
+   padding: 0 15px;
+   text-align: center;
+   align-items: center;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: -10px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h5{
+	font-size: 15px;
+	color: lightgray;
+	text-transform: capitalize;
+	font-weight: 500;
+	position: relative;
+}
+
+.MenuContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 10px; /* Jarak antar gambar */
+  padding: 20px;
+}
+
+.ffbox {
+  display: flex;
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  border: 3px solid #e4e4e9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.ffbox1 {
+  flex: 1;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ffbox1 label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.ffbox1 input,
+.ffbox1 textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: #dcdce1;
+  border: none;
+}
+
+.ffbox1 textarea {
+  resize: vertical;
+}
+
+.ffbox1 {
+  margin-bottom: 16px;
+}
+
+.ffbox1 label {
+  margin-right: 16px;
+}
+
+.map-div {
+  flex: 1;
+  background-color: #eee;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: rgb(105, 152, 111);
+  color: rgb(183, 213, 179);
+  font-size: 17px;
+  font-weight: 700;
+  border: #a2c2ee;
+}
+
+button:hover {
+  background-color: rgb(52, 98, 58);
+}
+
+.map-div iframe {
+  border: 0;
+  padding: 10px;
+}
+
+.gfg {
+  text-align: center;
+  color: green;
+}
+
+.map-div {
+  background-color: rgb(152, 178, 234);
+}
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+
+
+aside {
+  width: 50%;
+  padding-left: 15px;
+  margin-left: 15px;
+  margin-right: 20px;
+  float: right;
+}
+
+#nav {
+  z-index: 9999;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id"></html>
+<html>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <title>The Prime Cut</title>
+
+  <link rel="stylesheet" href="CSS.css">5
+        <body style="background-color: black;">
+        <div class="navcontainer">
+        <nav>
+        <ul>
+          <li><img src="Logo Restoran.png" class="navbar-logo" alt="logo" style="float: left;"></li>
+          <li><a href="Contact.html" class="box">Contact</a></li>
+          <li><a href="Menu.html" class="box">Menu</a></li>
+          <li><a href="About Us.html" class="box">About</a></li>
+          <li><a href="Index.html" class="box">Home</a></li>
+        </ul>
+        </nav>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="Prime Cut Poster.png" style="width:1200px; height: 650px; margin-left: 120px;">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="Pilihan Sauce.jpg" style="width:1200px; height: 650px; margin-left: 120px;">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="Tingkat Kematangan.jpg" style="width:1200px; height: 650px; margin-left: 120px;">
+            </div>
+          
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+<br>
+<section class="hero-section" style="color: white;">
+  <img src="Chef Exclusive.png" width="25%" height="25%">
+  <br>
+  <div class="gallery-container">
+    <!-- Gambar 1 -->
+    <div class="gallery-item">
+        <img src="Sirloin Wagyu.png" alt="Sirloin Wagyu">
+    </div>
+    <!-- Gambar 2 -->
+    <div class="gallery-item">
+        <img src="Truffle Garlic Butter Steak.png" alt="Truffle Steak">
+    </div>
+    <!-- Gambar 3 -->
+    <div class="gallery-item">
+        <img src="Rosemary Butter Steak.png" alt="Rosemary Steak">
+    </div>
+    <!-- Gambar 4 -->
+    <div class="gallery-item">
+        <img src="Steak Au Poivre.png" alt="Steak Au Poivre">
+    </div>
+</div>
+</section>
+
+<section id="about" style="background-color: white;">
+  <img src="Foto sang CEO.jpg" height="250" width="250" style="border-radius: 50%;">
+  <h2>CEO <a style="color: orange;">STATEMENT</a></h2>
+  <p>At <b>Prime Cut</b>, we believe that dining is more than just a meal—it's an experience that brings people together. From the moment you walk through our doors, our goal is to make you feel welcomed, valued, and inspired. Every detail, from the carefully selected ingredients to the inviting ambiance, is designed to create moments that linger long after the last bite.</p>
+  <br>
+  <p>Our commitment to excellence is at the heart of everything we do. We source only the finest cuts of meat, work with local farmers to ensure freshness, and craft each dish with precision and passion. But it’s not just about the food; it’s about the connection we build with our guests. Whether you’re here for a special celebration, a business dinner, or a casual night out, we want your time with us to be nothing short of extraordinary.</p>
+  <br>
+  <p>Thank you for choosing The Prime Cut. Your trust and support inspire us to keep pushing boundaries and delivering the best. We are more than a restaurant—we are a community, and we are thrilled to have you as part of our journey. Here’s to great food, great company, and unforgettable memories.</p>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <img src="Email logo.png" style="border-radius: 50%; text-align: center; margin-bottom: -10px;">
+        <h4>BUSINESS INQUIRY EMAIL</h4>
+        <h5>albertus200110@gmail.com</h5>
+      </div>
+      <div class="footer-col">
+        <img src="Customer Service Logo.png" style="border-radius: 50%; text-align: center; margin-bottom: -10px;">
+        <h4>CUSTOMER SERVICE</h4>
+        <h5>+62 812 8592 9172</h5>
+      </div>
+      <div class="footer-col">
+        <img src="Location Logo.png" style="border-radius: 50%; text-align: center; margin-bottom: -10px;">
+        <h4>HEAD QUARTER OFFICE ADDRESS</h4>
+        <h5>Jl. Menteng Raya No.64 3, RT.3/RW.9, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340</h5>
+      </div>
+    </div>
+    <h2 style="text-align: center; color: white; font-size: 18px; font-weight: 400;">Copyright © 2025 by PT. Albertus Jaya</h2>
+  </div>
+</footer>
+</body>
+</html>
